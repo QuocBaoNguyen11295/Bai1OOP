@@ -2,10 +2,10 @@ package Officer;
 
 public class Officer_base {
     private String HoTen;
-    private String Tuoi;
+    private int Tuoi;
     private String GioiTinh;
     private String DiaChi;
-    public Officer_base(String hoTen,String tuoi, String gioiTinh,String diaChi){
+    public Officer_base(String hoTen,int tuoi, String gioiTinh,String diaChi){
          HoTen = hoTen;
          Tuoi = tuoi;
          GioiTinh = gioiTinh;
@@ -35,11 +35,11 @@ public class Officer_base {
         GioiTinh = gioiTinh;
     }
 
-    public void setTuoi(String tuoi) {
+    public void setTuoi(int tuoi) {
         Tuoi = tuoi;
     }
 
-    public String getTuoi() {
+    public int getTuoi() {
         return Tuoi;
     }
 }
