@@ -25,8 +25,12 @@ public class Officer_manager_class {
     }
 
     public void showOfficerInfoList(){
-        for(Officer_base officer: officer_list){
-            System.out.println(officer.toString());
+        if(officer_list.size() == 0){
+            System.err.println("No officer exists in the list!");
+        }else{
+            for(int i = 0;i < officer_list.size();i++) {
+                System.out.println(officer_list.get(i).toString());
+            }
         }
     }
 }
